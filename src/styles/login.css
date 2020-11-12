@@ -68,11 +68,18 @@
     font-size: 1.9rem;
 }
 
-.container-form from .checkbox label{
-    font-size: 2rem;
+.checkbox {
+    display: flex;
+    align-items: center;
 }
 
-.container-form form button[type='submit']{
+.checkbox label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: .6rem;
+}
+
+.container-form form a{
     background-color: #BA2317;
     width: 8rem;
     height: 8rem;
@@ -106,10 +113,6 @@
     height: 100vh;
 }
 
-.container-wallpaper img {
-    height: 100%;
-}
-
 .container-wallpaper button {
     background-color: #666;
     width: 5rem;
@@ -127,3 +130,18 @@
     font-size: 2.5rem;
 }
 
+@media( min-width: 1000px ) {
+    .container .container-form {
+        width: 30vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-wallpaper {
+        width: 70vw;
+        height: 100vh;
+    }
+}

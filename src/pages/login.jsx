@@ -2,6 +2,7 @@ import { SiFacebook, SiApple} from 'react-icons/si'
 import { FcGoogle } from 'react-icons/fc';
 import { FiArrowRight } from 'react-icons/fi';
 import { FaCog } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import logo from '../assets/lol-logo.png';
 import wallpaper from '../assets/tk-chef-splash.jpg';
@@ -32,7 +33,7 @@ function Login(){
                         <input type="checkbox" name="manter-login" id="manter-login"/> <label htmlFor="manter-login">Mater login</label>
                     </div> 
 
-                    <button type='submit'><FiArrowRight/></button>
+                    <Link to="/home"><FiArrowRight/></Link>
                 </form>
 
                 <div className="links">
@@ -41,8 +42,7 @@ function Login(){
                 </div>
 
             </div>
-            <div className="container-wallpaper">
-                <img src={wallpaper} alt="wallpaper"/>
+            <div className="container-wallpaper" style={{background: `url(${wallpaper}) no-repeat center / cover`}}>
                 <button><FaCog/></button>
             </div>
         </div>
