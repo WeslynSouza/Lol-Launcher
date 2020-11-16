@@ -1,18 +1,23 @@
 
+import '../styles/Home.css';
+
+import logo from '../assets/inicio-logo.jpg';
+
 function Home() {
     return (
         <div className='container'>
             <div className="main-content">
                 <div className="navbar">
                     <ul className='menu'>
-                        <li className="menu-item">
-                            <button>Logo/iniciar</button>
+                        <li className="menu-item butao-inicio">
+                            <img src={logo} alt="logo"/>
+                            <button>grupo</button>
                         </li>
                         <li className="menu-item">
-                            <button>!</button>
+                            <button className='butao-aviso'>!</button>
                         </li>
                         <li className="menu-item">
-                            <a href="/">Inicio</a>
+                            <a href="/">Início</a>
                         </li>
                         <li className="menu-item">
                             <a href="/">TFT</a>
@@ -47,7 +52,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="content"></div>
+                <div className="content">
+                    <h1>Conteudo principal</h1>
+                </div>
             </div>
             <div className="sidebar">
                 <div className="profile">
